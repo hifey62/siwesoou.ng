@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img class="toogler" src="icons8-menu-48.png" alt="Menu Icon">
+      
+        <nav id="nav-con">
+              <!-- Corrected the id -->
+               <img class="toogler toogler-x" src="icons8-cancel-50.png" alt="">
+            <a class="nav-links" href="index.html">Home</a>
+            <a class="nav-links" href="directorateofsiwes.html">Directorate of siwes</a>
+            <a class="nav-links" href="#">About us</a>
+            <a class="nav-links" href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <div>
+        <div class="Vice-Chancellor-Adress">
+            <div class="welcome-card">
+                <div class="image-container">
+                    <img class="vc-img" src="vc.png" alt="Vice-Chancellor">
+                </div>
+                <div class="content">
+                    <h1>Welcome from the Vice-Chancellor</h1>
+                    <p>It is a great pleasure to welcome you to Olabisi Onabanjo University, Ago-Iwoye, Ogun State,
+                        Nigeria as well to the Directorate of Students’ Industrial Work Experience Scheme (SIWES) unit
+                        of our great university. The unit is headed by a Director and also has non-academic supporting
+                        staff that are involved in day-to-day activities of the Directorate. The Departmental and Faculty
+                        coordinators are in-charge of SIWES activities as well as giving reports to the Directorate. The
+                        Directorate works in collaboration with the Industrial Training Fund (ITF) to ensure that students
+                        in Industrial attachment require adequate practical exposure that will enhance their competence
+                        and self-reliance after graduation. The Directorate is under the office of the Vice Chancellor.</p>
+
+                    <h2>What is SIWES?</h2>
+                    <p>SIWES is a program aimed at bridging the gap between theory and practical knowledge, preparing students for the work environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>© 2024 University. All Rights Reserved.</div>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+      </footer>
+  
+    
+
+    <script>
+
+        function togle(id){
+            document.querySelectorAll('.toogler').forEach((element)=>{
+
+                element.addEventListener('click',()=>{
+                    let navList = document.getElementById(id);  // Corrected id
+            if (navList.style.display === 'none' || navList.style.display === '') {
+                navList.style.display = 'block';
+            } else {
+                navList.style.display = 'none';
+            }
+
+                })
+          
+        })
+        }
+
+       
+
+        
+        
+       togle("nav-con")
+    </script>
+</body>
+</html>
