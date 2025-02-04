@@ -1,0 +1,137 @@
+body{
+    background-color: whitesmoke;
+}
+
+
+.prof-img{
+width: 80%;
+height: 40vh;
+border-radius: 10px;
+margin-top: 30px;
+margin-left: 120px;
+position: relative;
+
+}
+
+.staff-card img{
+    margin-top: 20px;
+   border-radius: 50%;
+}
+
+.duration-selection{
+    margin-top: 30px;
+}
+
+button{
+
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+
+
+.prof-img{
+width: 150px;
+height: 150px;
+
+border-radius: 50%;
+margin-top: 30px;
+right: 56px;
+position: relative;
+
+}
+
+.staff-card img{
+    margin-top: 20px;
+   border-radius: 50%;
+}
+
+.duration-selection{
+    margin-top: 30px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+button{
+
+    width: 200px;
+    height: 38px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+button:hover{
+    background-color: #2a5b2b;
+}
+
+.message-section{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    height: 380px;
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: auto;
+
+}
+
+.message-section h2{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+
+.staff-card {
+    text-align: center;
+    max-width: 200px;
+    margin: 40px; /* Add margin here to create space */
+    transition: transform 0.3s;
+}
+
+.staff-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+    margin-bottom: 10px;
+}
+.staff-carousel {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 5));
+    }
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.duration-selection{
+    margin-left: 58px;
+}

@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: sans-serif;
+}
+.con-container{
+    padding-left: 20px;
+}
+
+.nav-links{
+    text-decoration: none;
+    margin-right: 50px;
+    display: block;
+    position: relative;
+    bottom: 34px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 10px;
+    color: white;
+    
+   
+
+}
+
+#nav-con{
+    display: none;
+    position: relative;
+    bottom: 52px;
+    background-color:#291770;
+    height: 100vh;
+    width: 100%;
+}
+
+.toogler-x{
+    width: 30px;
+    margin-top: 10px;
+    
+}
+.Vice-Chancellor-Adress{
+    position: relative;
+    top: 60px;
+}
+
+.vc-img{
+    width: 100%;
+    border-radius: 8px;   
+}
+
+.content{
+    line-height: 2; 
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 90px;
+}
+footer nav a {
+    color: #ffcc00;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.content{
+    margin-left: 1  0px;
+}
+

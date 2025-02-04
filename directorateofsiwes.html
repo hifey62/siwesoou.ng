@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="directorate.css">
+</head>
+<body>
+    <header>
+        <img class="toogler" src="icons8-menu-48.png" alt="Menu Icon">
+      
+        <nav id="nav-con">
+              <!-- Corrected the id -->
+               <img class="toogler toogler-x" src="icons8-cancel-50.png" alt="">
+            <a class="nav-links" href="index.html">Home</a>
+            <a class="nav-links" href="directorateofsiwes.html">Directorate of siwes</a>
+            <a class="nav-links" href="#">About us</a>
+            <a class="nav-links" href="#">Contact</a>
+        </nav>
+
+        <div class="container">
+            <!-- Introduction Section -->
+            <div class="message-section white-message">
+                <h2 class="white-message">Message from the Director</h2>
+                
+                <img  class="prof-img" src="profusman.png" alt="Director">
+                <p class="white-message">Welcome to the Directorate of SIWES! Our mission is to ensure a successful and enriching SIWES program
+                    for all students. We are here to guide and support you throughout this process. Let us work together to
+                    make this experience rewarding and impactful.</p>
+            </div>
+
+            <!-- Staff Section -->
+            <div class="staff-carousel">
+                <div class="staff-card">
+                    <img src="vc.png" alt="Dr. John Doe">
+                    <p><strong>Dr. John Doe</strong></p>
+                    <p>Director</p>
+                </div>
+                <div class="staff-card">
+                    <img src="vc.png" alt="Mrs. Jane Smith">
+                    <p><strong>Mrs. Jane Smith</strong></p>
+                    <p>Administrative Officer</p>
+                </div>
+                <div class="staff-card">
+                    <img src="vc.png" alt="Mr. Alex Johnson">
+                    <p><strong>Mr. Alex Johnson</strong></p>
+                    <p>Program Coordinator</p>
+                </div>
+                <div class="staff-card">
+                    <img src="vc.png" alt="Staff 4">
+                    <p><strong>Ms. Sarah Connor</strong></p>
+                    <p>Internship Advisor</p>
+                </div>
+                <div class="staff-card">
+                    <img src="vc.png" alt="Staff 5">
+                    <p><strong>Mr. Tim Cook</strong></p>
+                    <p>Industry Liaison</p>
+                </div>
+            </div>
+
+            <!-- SIWES Duration Section -->
+            <div class="section duration-selection">
+                <h2>Select Your SIWES Duration</h2>
+                <form>
+                    <select class="Duration" id="duration" name="duration">
+                        <option value="">--Select--</option>
+                        <option value="siwesletter.docx">3 months</option>
+                        <option value="siwesletter.docx">4 months</option>
+                        <option value="siwesletter.docx">6 Months</option>
+                        <option value="siwesletter.docx">1 Year</option>
+                    </select>
+                    <button type="button" onclick="downloadLetter()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+
+        function togle(id){
+            document.querySelectorAll('.toogler').forEach((element)=>{
+
+                element.addEventListener('click',()=>{
+                    let navList = document.getElementById(id);  // Corrected id
+            if (navList.style.display === 'none' || navList.style.display === '') {
+                navList.style.display = 'block';
+            } else {
+                navList.style.display = 'none';
+            }
+
+                })
+          
+        })
+        }
+
+       
+
+        
+        
+       togle("nav-con")
+
+       function downloadLetter() {
+
+const duration = document.getElementById('duration').value;
+if (duration) {
+    // Create an invisible anchor element
+    const link = document.createElement('a');
+    link.href = duration; // Set the file URL
+    link.download = duration.split('/').pop(); // Suggest a file name for download
+    document.body.appendChild(link); // Append it to the DOM
+    link.click(); // Simulate a click to trigger the download
+    document.body.removeChild(link); // Remove the element
+} else {
+    alert("Please select a duration.");
+}
+
+
+}
+    </script>
+
+</body>
+</html>
